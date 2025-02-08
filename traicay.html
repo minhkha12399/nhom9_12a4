@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vườn Trái Cây Cái Mơn</title>
+      <title>Vườn Trái Cây Cái Mơn</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #4CAF50;
@@ -35,10 +36,13 @@
         .container {
             padding: 20px;
         }
-        .destination {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        .content-box {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
         }
         .destination-card {
             flex: 1 1 calc(33% - 20px);
@@ -69,36 +73,79 @@
             margin-top: 20px;
         }
         h2 { text-align: center; }
-         .center-grid {
+        h3, h5 { text-align: center; }
+        .center-grid {
             display: grid;
             place-items: center;
-            height: 100vh;
+            height: auto;
         }
-
-
+        .center-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+        #commentForm, #commentSection {
+            max-width: 600px;
+            margin: auto;
+            padding: 10px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
-    <body>
-        <header>
+</head>
+<body>
+    <header>
         <h1>Khám Phá Du Lịch Bến Tre</h1>
         <p>Hành trình về miền Tây sông nước</p>
     </header>
-        <nav>
+    <nav>
         <a href="index.html">Trang Chủ</a>
-        <a href="#">Liên Hệ</a>
+        <a href="cp.html">Liên Hệ</a>
     </nav>
-    <h2> Vườn Trái Cây Cái Mơn </h2>
-    <h3> Vị trí</h3>
+
+    <div class="container">
+        <div class="content-box">   
+        <h2> Vườn Trái Cây Cái Mơn </h2>     
+ <h3> Vị trí</h3>
     <p>Vườn trái cây Cái Mơn tọa lạc tại địa phận xã Vĩnh Thành, huyện Chợ Lách, tỉnh Bến Tre. Theo nghiên cứu của nhà văn Sơn Nam về văn hóa vùng đất Nam Bộ thì cái tên Cái Mơn đã có từ xa xưa. Khi ấy vùng đất này có nhiều loại cây trái sum suê, hoa nở quanh năm thu hút biết bao nhiêu đàn ong mật tìm đến. Từ Cái được hiểu là những con rạch lớn và từ Mơn theo tiếng Khmer là ong mật.</p>
      <div class="center-grid">
- <img src="images/100.jpg" alt="anh"  width="900" heigh="1000">
+ <img src="images/100.jpg" alt="anh"  width="600" heigh="600">
 </div>
 <h3>Nên đi du lịch vườn trái cây Cái Mơn vào thời điểm nào?</h3>
 <p>Du khách có thể ghé thăm vườn trái cây Cái Mơn vào bất kỳ thời điểm nào trong năm. Mỗi mùa, nơi đây sẽ có những loại cây ăn trái đặc trưng riêng. Có người thích du lịch Cái Mơn vào mùa hè, cũng có người lại thích Cái Mơn vào dịp Tết.</p>
 <p>Nếu đến đây vào khoảng thời gian từ tháng 6 đến tháng 8, du khách sẽ có thể thưởng thức các loại trái cây thơm ngon, bổ dưỡng như sầu riêng, chôm chôm, nhãn,... Du lịch Cái Mơn vào đúng thời điểm mà hàng trăm loại trái cây đang chín rộ, du khách sẽ không khỏi trầm trồ bởi những màu sắc bắt mắt và hương thơm ngọt ngào.</p>.
 <p>Ngoài ra, tại đây, du khách còn được trải nghiệm những ngày làm nông dân và cùng người dân ở đây thu hoạch trái cây trong vườn. Đến với “vương quốc trái cây” Cái Mơn, chắc chắn rằng bạn sẽ có những trải nghiệm khó quên.</p>
 <div class="center-grid">
- <img src="images/101.jpg" alt="anh"  width="900" heigh="1000">
+ <img src="images/101.jpg" alt="anh"  width="600" heigh="600">
 </div>
+
+        </div>
+
+        <div class="content-box">
+           
 <h3>Vương quốc trái cây Cái Mơn có gì hấp dẫn?</h3>
 <h4>Vườn cây ăn trái ngọt lịm</h4>
 <p>
@@ -107,56 +154,49 @@
 <p>Du lịch miệt vườn Cái Mơn, bạn sẽ có cơ hội dạo chơi, tham quan và thả ga thưởng thức trái cây ngay tại chỗ hoặc mua về làm quà cho những người thân yêu của mình. Bên cạnh đó, dưới sự hướng dẫn tận tình của những người trồng cây ăn trái, bạn sẽ có cơ hội học được cách chăm sóc từng loại cây ăn quả để đạt năng suất và chất lượng cao nhất.</p>
 
 <div class="center-grid">
- <img src="images/102.jpg" alt="anh"  width="1100" heigh="1000">
+ <img src="images/102.jpg" alt="anh"  width="600" heigh="600">
 </div>
 <h4>Khám phá xứ sở hoa kiểng</h4>
 <p>Bên cạnh những vườn cây trái trĩu quả, Cái Mơn còn được mệnh danh là xứ sở của nhiều loại hoa kiểng như vạn thọ, cúc họa mi, hoa giấy, cúc họa mi, cẩm chướng, cúc mâm xôi,... Hàng năm, làng nghề Cái Mơn cung cấp ra thị trường trong nước hàng trăm loại hoa kiểng, cây cảnh đẹp. Đặc biệt, những loại cây cảnh này còn được xuất khẩu sang nhiều nước trên thế giới như Hàn Quốc, Singapore, Nhật Bản…</p>
 </p>
 <div class="center-grid">
- <img src="images/103.jpg" alt="anh"  width="1000" heigh="1000">
+ <img src="images/103.jpg" alt="anh"  width="600" heigh="600">
 </div>
- <div id="commentForm">
-        <h2>Thêm bình luận</h2>
-        <input type="text" id="username" placeholder="Tên của bạn" required>
-        <textarea id="commentText" placeholder="Viết bình luận của bạn..." rows="4" required></textarea>
-        <button onclick="addComment()">Gửi bình luận</button>
+        </div>
+
+      
+
+        <div id="commentForm">
+            <h2>Thêm bình luận</h2>
+            <input type="text" id="username" placeholder="Tên của bạn" required>
+            <textarea id="commentText" placeholder="Viết bình luận của bạn..." rows="4" required></textarea>
+            <button onclick="addComment()">Gửi bình luận</button>
+        </div>
+
+        <div id="commentSection">
+            <h2>Bình luận:</h2>
+        </div>
     </div>
 
-    <div id="commentSection">
-        <h2>Bình luận:</h2>
-        <!-- Các bình luận sẽ được thêm vào đây -->
-    </div>
-<script>
-        // Hàm thêm bình luận
+    <footer>
+        <p>&copy; 2025 Du Lịch Bến Tre. Mọi quyền được bảo lưu.</p>
+        <p>&copy; Nhóm 9 Lớp 12A4 Trường THPT Phan Liêm</p>
+    </footer>
+
+    <script>
         function addComment() {
-            // Lấy tên người dùng và nội dung bình luận
             const username = document.getElementById('username').value;
             const commentText = document.getElementById('commentText').value;
-
-            // Kiểm tra nếu các trường còn trống
             if (username === '' || commentText === '') {
-                alert('Vui lòng điền đầy đủ tên và bình luận!');
+                alert('Vui lòng điền đầy đủ thông tin!');
                 return;
             }
-
-            // Tạo phần tử mới cho bình luận
             const commentDiv = document.createElement('div');
-            commentDiv.classList.add('comment');
-
-            // Thêm tên người dùng và nội dung bình luận vào phần tử
-            commentDiv.innerHTML = `<h3>${username}</h3><p>${commentText}</p>`;
-
-            // Thêm bình luận vào phần bình luận
+            commentDiv.innerHTML = `<h4>${username}</h4><p>${commentText}</p>`;
             document.getElementById('commentSection').appendChild(commentDiv);
-
-            // Xóa dữ liệu trong form sau khi gửi
             document.getElementById('username').value = '';
             document.getElementById('commentText').value = '';
         }
     </script>
 </body>
-
-<footer>
-        <p>&copy; 2025 Du Lịch Bến Tre. Mọi quyền được bảo lưu.</p>
-        <p>&copy; Nhóm 9 Lớp 12A4 Trường THPT Phan Liêm</p>
-    </footer>
+</html>

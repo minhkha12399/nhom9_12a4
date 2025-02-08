@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #4CAF50;
@@ -35,10 +36,13 @@
         .container {
             padding: 20px;
         }
-        .destination {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        .content-box {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
         }
         .destination-card {
             flex: 1 1 calc(33% - 20px);
@@ -69,115 +73,140 @@
             margin-top: 20px;
         }
         h2 { text-align: center; }
+        h3, h5 { text-align: center; }
         .center-grid {
             display: grid;
-            place-items: center; /* Căn giữa cả hai chiều */
-            height: 100vh;
+            place-items: center;
+            height: auto;
         }
-      h5 { text-align: center; }
-      p { text-align: center; }
-      .center-flex {
+        .center-flex {
             display: flex;
-            justify-content: center;  
-            align-items: center;  
-
-
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+        #commentForm, #commentSection {
+            max-width: 600px;
+            margin: auto;
+            padding: 10px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
-    <body>
-        <header>
+</head>
+<body>
+    <header>
         <h1>Khám Phá Du Lịch Bến Tre</h1>
         <p>Hành trình về miền Tây sông nước</p>
     </header>
-        <nav>
+    <nav>
         <a href="index.html">Trang Chủ</a>
-        <a href="#">Liên Hệ</a>
+        <a href="cp.html">Liên Hệ</a>
     </nav>
-    <h2> Bãi biển Thừa Đức </h2>
-<h3>    Vị trí địa lí </h3>
-     <div class="center-flex">
-       <p>Bãi biển xã Thừa Đức là một bãi biển tự nhiên thuộc huyện Bình Đại, tỉnh Bến Tre có chiều dài 8 km, môi trường trong lành, là nơi thuận lợi cho nghêu, sò sinh sôi phát triển.Bãi biển Thừa Đức nằm dọc theo cửa biển Cửa Đại thuộc địa phận ấp Thừa Trung, xã Thừa Đức, nước biển phù sa vào mùa mưa thì nước lợ, mùa khô nước mặn.</p>
-   </div>
-    <h4>Bãi biển Thừa Đức được biết đến là một nơi yên bình, thanh tĩnh, vẻ đẹp hoang sơ với những hàng dương rủ bóng bên đường. Tiếng sóng biển vỗ rì rào, tiếng vi vu của gió hòa vào nhau tạo nên những thanh âm trong trẻo khiến bạn khó lòng nào mà cưỡng lại được</h4>
-    <h3>    Bãi biển Thừa Đức có gì?</h3>
-     <div class="center-flex">
-    <p>Thừa Đức là một bãi biển xinh đẹp, hoang sơ đến lạ kì nằm cách thành phố Bến Tre chừng 67km đường xe chạy. Nếu một lần đặt chân tới nơi đây bạn sẽ bị mê hoặc bởi vẻ đẹp hoang sơ đến lạ của thiên nhiên nơi đây. Từng triền cát trắng mịn màng bên bờ biển như một tấm lụa mềm mại, ôm hờ lấy làn nước biển trong xanh đến lạ kì. Đan xen vào giữa bức tranh ấy lại là những hàng dương rợp bóng đang vi vu trong làn gió biển mát lành, tiếng sóng, tiếng gió, tiếng lá cây như đang hòa vào nhau và tạo nên một bản nhạc ngẫu hứng khiến ai nấy đều thích mê và không thể nào có thể cưỡng lại cơ hội được thưởng thức. Bức tranh muôn màu với những thanh âm trong trẻo như thế sẽ khiến bạn thư giãn và quên hết đi tất cả những xô bồ, hối hả của cuộc sống, công việc . </p>
-</div>
-     
-    <div class="center-grid">
- <img src="images/11.jpg" alt="bãi biển"  width="900" heigh="900">
-</div>
-<h5> Bãi biển Thừa Đức</h5>
-<h3>Thời điểm lí tưởng để đến biển Thừa Đức </h3>
- <div class="center-flex">
-<p> Cũng giống như nhiều bãi biển khác, nếu muốn ghé thăm bãi biển nổi tiếng hoang sơ và xinh đẹp này bạn nên ghé thăm vào những ngày hè để đập tan cái nóng oi ả .Có một lưu ý là bạn nên ghé thăm vào mùa thấp điểm đó là những tháng đầu mùa hoặc cuối mùa du lịch thì khách du lịch mới bớt đông và bạn cũng có thể tận hưởng những điều tuyệt vời nhất của chuyến đi.
-</p>
-</div>
-<div class="center-grid">
-<img src="images/12.jpg" alt="hinhanh"  width="1000" heigh="500">
-</div>
-<img src="images/13.jpg" alt="hinhanh"  width="650" heigh="500">
-<img src="images/15.jpg" alt="hinhanh"  width="630" heigh="500">
 
-<h3>Ăn gì ở biển Thừa Đức</h3>
+    <div class="container">
+        <div class="content-box">
+             <h2> Bãi biển Thừa Đức </h2>
+            <h3>Vị trí địa lí</h3>
+             <p>Bãi biển xã Thừa Đức là một bãi biển tự nhiên thuộc huyện Bình Đại, tỉnh Bến Tre có chiều dài 8 km, môi trường trong lành, là nơi thuận lợi cho nghêu, sò sinh sôi phát triển.Bãi biển Thừa Đức nằm dọc theo cửa biển Cửa Đại thuộc địa phận ấp Thừa Trung, xã Thừa Đức, nước biển phù sa vào mùa mưa thì nước lợ, mùa khô nước mặn.</p>
+
+             <h4>Bãi biển Thừa Đức được biết đến là một nơi yên bình, thanh tĩnh, vẻ đẹp hoang sơ với những hàng dương rủ bóng bên đường. Tiếng sóng biển vỗ rì rào, tiếng vi vu của gió hòa vào nhau tạo nên những thanh âm trong trẻo khiến bạn khó lòng nào mà cưỡng lại được</h4>
+            <h3> Bãi biển Thừa Đức có gì?</h3>
+            <p>Thừa Đức là một bãi biển xinh đẹp, hoang sơ đến lạ kì nằm cách thành phố Bến Tre chừng 67km đường xe chạy. Nếu một lần đặt chân tới nơi đây bạn sẽ bị mê hoặc bởi vẻ đẹp hoang sơ đến lạ của thiên nhiên nơi đây. Từng triền cát trắng mịn màng bên bờ biển như một tấm lụa mềm mại, ôm hờ lấy làn nước biển trong xanh đến lạ kì. Đan xen vào giữa bức tranh ấy lại là những hàng dương rợp bóng đang vi vu trong làn gió biển mát lành, tiếng sóng, tiếng gió, tiếng lá cây như đang hòa vào nhau và tạo nên một bản nhạc ngẫu hứng khiến ai nấy đều thích mê và không thể nào có thể cưỡng lại cơ hội được thưởng thức. Bức tranh muôn màu với những thanh âm trong trẻo như thế sẽ khiến bạn thư giãn và quên hết đi tất cả những xô bồ, hối hả của cuộc sống, công việc . </p>
+
+              
+    <div class="center-grid">
+ <img src="images/11.jpg" alt="bãi biển"  width="600" heigh="600">
+</div>
+        <h5> Bãi biển Thừa Đức</h5>
+
+        <div class="content-box">
+            <h3>Thời điểm lí tưởng để đến biển Thừa Đức </h3>
+         <p> Cũng giống như nhiều bãi biển khác, nếu muốn ghé thăm bãi biển nổi tiếng hoang sơ và xinh đẹp này bạn nên ghé thăm vào những ngày hè để đập tan cái nóng oi ả .Có một lưu ý là bạn nên ghé thăm vào mùa thấp điểm đó là những tháng đầu mùa hoặc cuối mùa du lịch thì khách du lịch mới bớt đông và bạn cũng có thể tận hưởng những điều tuyệt vời nhất của chuyến đi.
+</p>
+        </div>
+
+        <div class="content-box">
+            <h3>Hình ảnh ở Bãi biển Thừa Đức</h3>
+           <div class="center-grid">
+<img src="images/12.jpg" alt="hinhanh"  width="600" heigh="600">
+<img src="images/13.jpg" alt="hinhanh"  width="600" heigh="600">
+<img src="images/15.jpg" alt="hinhanh"  width="600" heigh="600">
+</div>
+
+        </div>
+
+        <div class="content-box">
+           <h3>Ăn gì ở biển Thừa Đức</h3>
 <h4>Bánh xèo khu du lịch biển Phù Sa – Thừa Đức:</h4>
 <p> Tại bờ biển bạn có thể thưởng thức những mâm bánh xèo còn nóng hổi, hơi khói bốc lên nghi ngút, hương thơm lừng của những chiếc bánh sẽ khiến bạn không thể chối từ.</p>
 <div class="center-grid">
-<img src="images/16.jpg" alt="hinhanh"  width="1000" heigh="1000">
+<img src="images/16.jpg" alt="hinhanh"  width="600" heigh="600">
 </div>
 <h4> Hải sản biển:</h4>
 <p>Sau khi tắm biển bạn có thể thưởng thức các món đặc sản biển nơi đây như là cua, cá, tôm, đặc biệt là ốc gạo có hương vị thơm ngon tuyệt hảo. Hãy thử thưởng thức món mực và uống thêm chút bia để cảm nhận hương vị tuyệt vời nơi đây.</p>
 
 <div class="center-grid">
-<img src="images/17.jpg" alt="hinhanh"  width="500" heigh="450">
+<img src="images/17.jpg" alt="hinhanh"  width="600" heigh="600">
 
-<img src="images/20.jpg" alt="hinhanh"  width="500" heigh="450">
+<img src="images/20.jpg" alt="hinhanh"  width="600" heigh="600">
 </div>
-<p>Hình ảnh minh hoạ</p>
 
+        </div>
 
-</div>
-<div id="commentForm">
-        <h2>Thêm bình luận</h2>
-        <input type="text" id="username" placeholder="Tên của bạn" required>
-        <textarea id="commentText" placeholder="Viết bình luận của bạn..." rows="4" required></textarea>
-        <button onclick="addComment()">Gửi bình luận</button>
+        <div id="commentForm">
+            <h2>Thêm bình luận</h2>
+            <input type="text" id="username" placeholder="Tên của bạn" required>
+            <textarea id="commentText" placeholder="Viết bình luận của bạn..." rows="4" required></textarea>
+            <button onclick="addComment()">Gửi bình luận</button>
+        </div>
+
+        <div id="commentSection">
+            <h2>Bình luận:</h2>
+        </div>
     </div>
-
-    <div id="commentSection">
-        <h2>Bình luận:</h2>
-        <!-- Các bình luận sẽ được thêm vào đây -->
-    </div>
-
-    <script>
-        // Hàm thêm bình luận
-        function addComment() {
-            // Lấy tên người dùng và nội dung bình luận
-            const username = document.getElementById('username').value;
-            const commentText = document.getElementById('commentText').value;
-
-            // Kiểm tra nếu các trường còn trống
-            if (username === '' || commentText === '') {
-                alert('Vui lòng điền đầy đủ tên và bình luận!');
-                return;
-            }
-
-            // Tạo phần tử mới cho bình luận
-            const commentDiv = document.createElement('div');
-            commentDiv.classList.add('comment');
-
-            // Thêm tên người dùng và nội dung bình luận vào phần tử
-            commentDiv.innerHTML = `<h3>${username}</h3><p>${commentText}</p>`;
-
-            // Thêm bình luận vào phần bình luận
-            document.getElementById('commentSection').appendChild(commentDiv);
-
-            // Xóa dữ liệu trong form sau khi gửi
-            document.getElementById('username').value = '';
-            document.getElementById('commentText').value = '';
-        }
-    </script>
 
     <footer>
         <p>&copy; 2025 Du Lịch Bến Tre. Mọi quyền được bảo lưu.</p>
         <p>&copy; Nhóm 9 Lớp 12A4 Trường THPT Phan Liêm</p>
     </footer>
+
+    <script>
+        function addComment() {
+            const username = document.getElementById('username').value;
+            const commentText = document.getElementById('commentText').value;
+            if (username === '' || commentText === '') {
+                alert('Vui lòng điền đầy đủ thông tin!');
+                return;
+            }
+            const commentDiv = document.createElement('div');
+            commentDiv.innerHTML = `<h4>${username}</h4><p>${commentText}</p>`;
+            document.getElementById('commentSection').appendChild(commentDiv);
+            document.getElementById('username').value = '';
+            document.getElementById('commentText').value = '';
+        }
+    </script>
+</body>
+</html>
